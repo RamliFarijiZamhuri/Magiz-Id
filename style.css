@@ -1,0 +1,140 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Salsa', cursive;
+    scroll-behavior: smooth;
+}
+
+.parallax {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.intro {
+    background-image: url('/assets/1.jpg');
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    font-size: 4em;
+    letter-spacing: 20px;
+    font-family: fantasy;
+    color: white;
+}
+
+#myNavbar {
+    opacity: 0;
+    transition: opacity 0.5s;
+    /* animasi fade-in */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #000;
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: 8px 8px 17px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav a {
+    font-size: 17px;
+    color: #000;
+}
+
+.image {
+    margin: 2rem;
+}
+
+.image-1 {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.image-2 {
+    margin-left: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.about {
+    display: flex;
+    margin: 3rem;
+    padding-top: 5rem;
+}
+
+.image-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.img1 {
+    width: 17rem;
+    height: 30rem;
+    object-fit: cover;
+    margin: 3rem;
+}
+
+.img2 {
+    width: 17rem;
+    height: 30rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.img3 {
+    width: 17rem;
+    height: 7rem;
+    object-fit: cover;
+}
+
+.about-description h1 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-description p {
+    font-size: 20px;
+}
+
+.emoji {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 4rem;
+}
+
+.emoji a {
+    display: flex;
+    cursor: text;
+    font-size: 20px;
+    margin: 2rem;
+    color: #4343ff;
+}
